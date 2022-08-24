@@ -12,9 +12,8 @@ def global_cache_get(cache, key: str) -> typing.Union[str, None]:
 
     for i in range(GLOBAL_CACHE_CAPACITY):
         if hashed_key == cache_keys[i]:
-            print(f"global cache heat for {key}")
-
             return cache_values[i].value.decode()
+
     return None
 
 

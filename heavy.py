@@ -25,7 +25,6 @@ def generate_cache_key(key: str) -> str:
 
 # Main heavy computational function
 def _hcf(s: str) -> str:
-    print(f"heavy computation run for {s}")
     return str(reversed(s))
 
 
